@@ -6,8 +6,8 @@ The *purpose* of this repository is to create a neural network model of NLP with
 
 A sample of 4,300 texts was used as input, of which 2,850 texts were labeled 1:
 
-1) 2300 texts were obtained by parsing news sites, such as [rg.ru](https://rg.ru), [iz.ru](https://iz.ru) etc.;
-2) 550 scientific articles were marked by an expert manually (scientific articles are intended for further development of the model, in particular, the classification of texts on 3 topics: Comprehensive topics, the topic of the Ministry of Emergency Situations, the topic "Disaster medicine in emergency situations", at the moment, a dataset is being formed on the topic "Disaster Medicine in Emergency situations" and a comprehensive topic is being finalized).
+   1) 2300 texts were obtained by parsing news sites, such as [rg.ru](https://rg.ru), [iz.ru](https://iz.ru) etc.;
+   2) 550 scientific articles were marked by an expert manually (scientific articles are intended for further development of the model, in particular, the classification of texts on 3 topics: Comprehensive topics, the topic of the Ministry of Emergency Situations, the topic "Disaster medicine in emergency situations", at the moment, a dataset is being formed on the topic "Disaster Medicine in Emergency situations" and a comprehensive topic is being finalized).
 
 The remaining 1,500 texts were obtained by parsing a scientific journal on comprehensive topics and were labeled 0.
 
