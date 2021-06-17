@@ -19,7 +19,7 @@ The purpose of the model was to recognize text related to the structure of the M
 
 ++++
 <p align="center">
-  <img width="485" height="274" src="https://github.com/Non1ce/Image/blob/image/LSTM/LSTM.png">
+  <img width="473" height="346" src="https://github.com/Non1ce/Image/blob/image/LSTM/LSTM.png">
 </p>
 ++++
 
