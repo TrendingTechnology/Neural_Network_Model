@@ -57,24 +57,31 @@ Neural Network Architecture:
   <div class="close">X</div>
 </div>
 
+
 <html>
  <head>
   <meta charset="utf-8">
   <title>Фотографии</title>
+  <style>
+   .thumb img  {
+    border: 2px solid #55c5e9; /* Рамка вокруг фотографии */
+    padding: 15px; /* Расстояние от картинки до рамки */
+    background: #666; /* Цвет фона */
+    margin-right: 10px; /* Отступ справа */
+    margin-bottom: 10px; /* Отступ снизу */
+   }
+  </style>
  </head>
-   <body>
-      <p>
-       <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" alt="Фотография 1" width="120" height="120">
-         <h3>Какое то название</h3>
-       <span class="desc">neural network 2</span>
-       <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" alt="Фотография 2" width="120" height="120">
-         <h3>Какое то название</h3>
-       <span class="desc">neural network 2</span>
-       <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" alt="Фотография 3" width="120" height="120">
-       <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" alt="Фотография 4" width="120" height="120">
-      </p>
-   </body>
- </html>
+ <body>
+  <p class="thumb">
+   <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" alt="Фотография 1" width="120" height="120">
+   <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" alt="Фотография 2" width="120" height="120">
+  </p>
+ </body>
+</html>
+
+
+
  
  
  <div class="flex">
