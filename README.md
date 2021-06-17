@@ -15,11 +15,17 @@
 
 ## LSTM model
 
-   The purpose of the model was to recognize text related to the structure of the Ministry of Emergency Situations. A recurrent neural network with long-term short-term memory (LSTM) was used as a model.
+   Long Short-Term Memory~(LSTM) was introduced by [S. Hochreiter and J. Schmidhuber](https://direct.mit.edu/neco/article/9/8/1735/6109/Long-Short-Term-Memory) and developed by many research scientists.
 
+   To deal with these problems Long Short-Term Memory (LSTM) is a special type of RNN that preserves long term dependency in a more effective way compared to the basic RNNs. This is particularly useful to overcome vanishing gradient problem. Although LSTM has a chain-like structure similar to RNN, LSTM uses multiple gates to carefully regulate the amount of information that will be allowed into each node state. Figure shows the basic cell of a LSTM model.
+   
 <p align="center">
   <img width="407" height="298" src="https://github.com/Non1ce/Image/blob/image/LSTM/LSTM.png">
 </p>
+
+   The purpose of the model was to recognize text related to the structure of the Ministry of Emergency Situations. A recurrent neural network with long-term short-term memory (LSTM) was used as a model.
+
+
 
 
 Neural Network Architecture:
