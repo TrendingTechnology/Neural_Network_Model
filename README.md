@@ -46,11 +46,11 @@ Neural Network Architecture:
 
 <div class="img">
   <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" width="326" height="201" alt="neural network" />
-  <span class="desc">IMG1</span>
+  <span class="desc">neural network</span>
 </div>
 <div class="img">
-  <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" width="326" height="201" alt="neural network 2" />
-  <span class="desc">IMG2</span>
+  <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" width="326" height="201" alt="neural network" />
+  <span class="desc">neural network 2</span>
 </div>
 <div class="layer"></div>
 <div class="modal">
