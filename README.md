@@ -47,19 +47,24 @@ Neural Network Architecture:
    
    
 <html>
+ <head>
+    <style>
+       .container {
+         background-color: red;
+       }
+    </style>
+ </head>
  <body>
-<div class="img">
-  <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" width="150" height="100" alt="neural network" />
-  <span class="desc">neural network</span>
-</div>
-<div class="img">
-  <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" width="150" height="100" alt="neural network 2" />
-  <span class="desc">neural network 2</span>
-</div>
-<div class="layer"></div>
-<div class="modal">
-  <div class="close">X</div>
-</div>
+    <div class="container">
+      <div class="img">
+        <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" width="150" height="100" alt="neural network" />
+        <span class="desc">neural network</span>
+      </div>
+      <div class="img">
+        <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" width="150" height="100" alt="neural network 2" />
+        <span class="desc">neural network 2</span>
+      </div>
+    </div>
  </body>
 </html>
 
