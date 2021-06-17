@@ -17,8 +17,6 @@ The remaining 1,500 texts were obtained by parsing a scientific journal on compr
 
 The purpose of the model was to recognize text related to the structure of the Ministry of Emergency Situations. A recurrent neural network with long-term short-term memory (LSTM) was used as a model.
 
-<a href="url"><img src="https://github.com/Non1ce/Image/blob/image/LSTM/LSTM.png" align="center" height="274" width="485" ></a>
-
 ++++
 <p align="center">
   <img width="485" height="274" src="https://github.com/Non1ce/Image/blob/image/LSTM/LSTM.png">
