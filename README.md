@@ -46,7 +46,7 @@ Neural Network Architecture:
 
 <html>
  <body>
-  <p class="thumb">
+  <p class="thumb" align="center">
    <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" alt="Фотография 1" width="120" height="120">
    <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" alt="Фотография 2" width="120" height="120">
   </p>
