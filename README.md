@@ -76,21 +76,35 @@ Neural Network Architecture:
 
 
  
- 
+<div class="flex_wrapper">
  <div class="flex">
-
-  <div class="item">
+  <div class="item1">
     <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" alt="">
     <p>Описание этого блока, очевидно полезное но точно отображаюшее суть этого блока</p>
   </div>
 
-  <div class="item">
+  <div class="item2">
     <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" alt="">
     <p>Описание этого блока, очевидно полезное но точно отображаюшее суть этого блока</p>
   </div>
-
+ </div>
+   <p style="text-align: center;">Какойто текст</p>
+   
 </div>
-
+<style>
+  .item1{
+   float: right;
+   width: 30%;
+   } 
+   .item2{
+   float: left;
+   width: 30%;
+   } 
+   .flex{
+   display: flex
+   }
+   
+</style>
 
 ## Usage
 1. The model is located in `RNN_model_rus.py.`
