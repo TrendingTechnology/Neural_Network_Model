@@ -43,7 +43,11 @@ Neural Network Architecture:
 
 
    The neural network was trained using the "*accuracy*" metric and the entropy function binary_cross. The accuracy of the model is 95%. In the future, it is planned to introduce other accuracy metrics (f1_score, f beta_score, etc.), as well as additional training of the neural network on additional topics. 
-
+   
+   
+   
+<html>
+ <body>
 <div class="img">
   <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" width="150" height="100" alt="neural network" />
   <span class="desc">neural network</span>
@@ -56,6 +60,9 @@ Neural Network Architecture:
 <div class="modal">
   <div class="close">X</div>
 </div>
+ </body>
+</html>
+
 
 
 <html>
