@@ -25,7 +25,13 @@
 
    A recurrent neural network with long-term short-term memory (LSTM) was used as a model. The purpose of the model was to recognize text related to the structure of the Ministry of Emergency Situations.
    
-```
+```scss /* или css */
+@import "bower_components/tree-normalize/generic.normalize";
+h1 {
+ font-size:1.5em;
+ font-weight: 300;
+}
+
 def model_lstm(self, show_structure: bool = False):
 
   """
