@@ -32,8 +32,9 @@ Neural Network Architecture:
 
    4. Dense + Sigmoid
 
-
-
+<p align="center">
+  <img width="420" height="258" src="https://github.com/Non1ce/Image/blob/image/LSTM/LSTM.png">
+</p>
 
 The neural network was trained using the "*accuracy*" metric and the entropy function binary_cross. The accuracy of the model is 95%. In the future, it is planned to introduce other accuracy metrics (f1_score, f beta_score, etc.), as well as additional training of the neural network on additional topics. 
 
