@@ -68,6 +68,13 @@ Neural Network Architecture:
  </body>
 </html>
 
+image:: "https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG"
+   :height: 100px
+   :width: 200 px
+   :scale: 50 %
+   :alt: alternate text
+   :align: right
+
 
 <html>
  <body>
