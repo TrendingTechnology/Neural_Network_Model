@@ -42,7 +42,7 @@ def model_lstm(self, show_structure: bool = False):
 ```
 ## Neural Network Architecture:
 <html>
-<p><img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" width="258" height="159" align="right"/> </p>
+<p><img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" width="255" height="157" align="right"/> </p>
    
    1. Embedding 
    
