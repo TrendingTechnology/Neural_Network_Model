@@ -14,7 +14,27 @@ A sample of 4,300 texts was used as input, of which 2,800 texts were labeled 1:
 The remaining 1,500 texts were obtained by parsing a scientific journal on comprehensive topics and were labeled 0. The data was divided into 3 data sets: training, validation, test, and mixed. Data on scientific articles on the topic "Disaster Medicine in Emergency situations" can be found in [Scientific articles](https://github.com/Non1ce/Data_LSTM#readme).
 
 ## LSTM model
-The purpose of the model was to recognize text related to the structure of the Ministry of Emergency Situations. The model was evaluated using the "*accuracy*" metric, and the model's accuracy was 96%.
+
+The purpose of the model was to recognize text related to the structure of the Ministry of Emergency Situations. A recurrent neural network with long-term short-term memory (LSTM) was used as a model.
+
+
+
+Neural Network Architecture:
+
+   1. Embedding
+
+   2. LSTM
+
+   3. Dropout
+
+   4. Dense + Sigmoid
+
+
+
+
+The neural network was trained using the "*accuracy*" metric and the entropy function binary_cross. The accuracy of the model is 95%. In the future, it is planned to introduce other accuracy metrics (f1_score, f beta_score, etc.), as well as additional training of the neural network on additional topics. 
+
+
 
 ## Usage
 1. The model is located in `RNN_model_rus.py.`
