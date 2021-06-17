@@ -23,7 +23,7 @@
   <img width="407" height="298" src="https://github.com/Non1ce/Image/blob/image/LSTM/LSTM.png">
 </p>
 
-   The purpose of the model was to recognize text related to the structure of the Ministry of Emergency Situations.
+   A recurrent neural network with long-term short-term memory (LSTM) was used as a model. The purpose of the model was to recognize text related to the structure of the Ministry of Emergency Situations.
 
 
 
