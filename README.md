@@ -81,13 +81,11 @@ Neural Network Architecture:
 
   <div class="item">
     <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" alt="">
-    <h3>Какое то название</h3>
     <p>Описание этого блока, очевидно полезное но точно отображаюшее суть этого блока</p>
   </div>
 
   <div class="item">
     <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" alt="">
-    <h3>Какое то название</h3>
     <p>Описание этого блока, очевидно полезное но точно отображаюшее суть этого блока</p>
   </div>
 
