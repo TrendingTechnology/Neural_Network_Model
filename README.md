@@ -55,7 +55,7 @@ Neural Network Architecture:
     </style>
  </head>
  <body>
-    <div class="container">
+    <div class="container" style="background-color: red">
       <div class="img">
         <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" width="150" height="100" alt="neural network" />
         <span class="desc">neural network</span>
