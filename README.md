@@ -1,21 +1,21 @@
 ## Text Classification
 
-The *purpose* of this repository is to create a neural network model of NLP with deep learning for binary classification of texts related to the Ministry of Emergency Situations.
+   The *purpose* of this repository is to create a neural network model of NLP with deep learning for binary classification of texts related to the Ministry of Emergency Situations.
 
 ---
 
 ## Data
 
-A sample of 4,300 texts was used as input, of which 2,800 texts were labeled 1:
+   A sample of 4,300 texts was used as input, of which 2,800 texts were labeled 1:
 
    1) 2300 texts were obtained by parsing sites such as [rg.ru](https://rg.ru), [iz.ru](https://iz.ru) and others;
    2) 500 scientific articles were marked by an expert manually (scientific articles are intended for further development of the model, in particular, the classification of texts on 3 topics: Comprehensive topics, the topic of the Ministry of Emergency Situations, the topic "Disaster medicine in emergency situations", at the moment, a dataset is being formed on the topic "Disaster Medicine in Emergency situations" and a comprehensive topic is being finalized).
 
-The remaining 1,500 texts were obtained by parsing a scientific journal on comprehensive topics and were labeled 0. The data was divided into 3 data sets: training, validation, test, and mixed. Data on scientific articles on the topic "Disaster Medicine in Emergency situations" can be found in [Scientific articles](https://github.com/Non1ce/Data_LSTM#readme).
+   The remaining 1,500 texts were obtained by parsing a scientific journal on comprehensive topics and were labeled 0. The data was divided into 3 data sets: training, validation, test, and mixed. Data on scientific articles on the topic "Disaster Medicine in Emergency situations" can be found in [Scientific articles](https://github.com/Non1ce/Data_LSTM#readme).
 
 ## LSTM model
 
-The purpose of the model was to recognize text related to the structure of the Ministry of Emergency Situations. A recurrent neural network with long-term short-term memory (LSTM) was used as a model.
+   The purpose of the model was to recognize text related to the structure of the Ministry of Emergency Situations. A recurrent neural network with long-term short-term memory (LSTM) was used as a model.
 
 <p align="center">
   <img width="407" height="298" src="https://github.com/Non1ce/Image/blob/image/LSTM/LSTM.png">
@@ -37,7 +37,7 @@ Neural Network Architecture:
 </p>
 
 
-The neural network was trained using the "*accuracy*" metric and the entropy function binary_cross. The accuracy of the model is 95%. In the future, it is planned to introduce other accuracy metrics (f1_score, f beta_score, etc.), as well as additional training of the neural network on additional topics. 
+   The neural network was trained using the "*accuracy*" metric and the entropy function binary_cross. The accuracy of the model is 95%. In the future, it is planned to introduce other accuracy metrics (f1_score, f beta_score, etc.), as well as additional training of the neural network on additional topics. 
 
 
 
