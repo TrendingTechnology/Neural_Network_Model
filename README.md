@@ -63,7 +63,27 @@ Neural Network Architecture:
  </body>
 </html>
 
+[class^=circle] {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  font-size: 100px;
+  background-size:cover;
+}
+[class^=circle] span {
+  display: block;
+  margin-top: 155px;
+  font-size: 20px;
+  line-height: normal;
 
+.circle{
+  background-image:url([url]https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG);[/url]  
+}
+.circle2{
+  background-image:url([url]https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG);[/url]  
+}
 
 <html>
  <body>
