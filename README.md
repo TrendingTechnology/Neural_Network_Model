@@ -34,15 +34,6 @@ h1 {
 
 def model_lstm(self, show_structure: bool = False):
 
-  """
-
-  A recurrent neural network of the Long short-term memory type, capable of learning long-term dependencies.
-  The Sequence to one recurrent neural network configuration was used. This configuration is applicable for
-  solving problems of text or video classification, when a sequence of words (or images) is fed to the input
-  of the network, and as an output we get a single probability vector for the classes.
-
-  """
-
   model = Sequential()
   model.add(Embedding(self.max_words, 12, input_length=self.max_len))
   model.add(LSTM(6))
@@ -54,6 +45,7 @@ def model_lstm(self, show_structure: bool = False):
   if show_structure:
       model.summary()
   return model
+  
 ```
 
 Neural Network Architecture:
