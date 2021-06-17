@@ -4,14 +4,17 @@ The *purpose* of this repository is to create a neural network model of NLP with
 
 ---
 
+## Data
+
 A sample of 4,300 texts was used as input, of which 2,850 texts were labeled 1:
 
    1) 2300 texts were obtained by parsing sites such as [rg.ru](https://rg.ru), [iz.ru](https://iz.ru) and others;
    2) 550 scientific articles were marked by an expert manually (scientific articles are intended for further development of the model, in particular, the classification of texts on 3 topics: Comprehensive topics, the topic of the Ministry of Emergency Situations, the topic "Disaster medicine in emergency situations", at the moment, a dataset is being formed on the topic "Disaster Medicine in Emergency situations" and a comprehensive topic is being finalized).
 
-The remaining 1,500 texts were obtained by parsing a scientific journal on comprehensive topics and were labeled 0.
+The remaining 1,500 texts were obtained by parsing a scientific journal on comprehensive topics and were labeled 0. The data was divided into 3 data sets: training, validation, test, and mixed. 
 
-The data was divided into 3 data sets: training, validation, test, and mixed. The purpose of the model was to recognize text related to the structure of the Ministry of Emergency Situations. The model was evaluated using the "*accuracy*" metric, and the model's accuracy was 96%.
+## LSTM model
+The purpose of the model was to recognize text related to the structure of the Ministry of Emergency Situations. The model was evaluated using the "*accuracy*" metric, and the model's accuracy was 96%.
 
 ## Usage
 1. The model is located in `RNN_model_rus.py.`
