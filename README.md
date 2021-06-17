@@ -19,6 +19,11 @@ The purpose of the model was to recognize text related to the structure of the M
 
 <a href="url"><img src="https://github.com/Non1ce/Image/blob/image/LSTM/LSTM.png" align="center" height="274" width="485" ></a>
 
+++++
+<p align="center">
+  <img width="485" height="274" src="https://github.com/Non1ce/Image/blob/image/LSTM/LSTM.png">
+</p>
+++++
 
 Neural Network Architecture:
 
