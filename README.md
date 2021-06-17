@@ -43,38 +43,6 @@ Neural Network Architecture:
 
 
    The neural network was trained using the "*accuracy*" metric and the entropy function binary_cross. The accuracy of the model is 95%. In the future, it is planned to introduce other accuracy metrics (f1_score, f beta_score, etc.), as well as additional training of the neural network on additional topics. 
-   
-   
-   
-<html>
- <head>
-    <style>
-       .container {
-         background-color: red;
-       }
-    </style>
- </head>
- <body>
-    <div class="container" style="background-color: red">
-      <div class="img">
-        <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" width="150" height="100" alt="neural network" />
-        <span class="desc">neural network</span>
-      </div>
-      <div class="img">
-        <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" width="150" height="100" alt="neural network 2" />
-        <span class="desc">neural network 2</span>
-      </div>
-    </div>
- </body>
-</html>
-
-image:: "https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG"
-   :height: 100px
-   :width: 200 px
-   :scale: 50 %
-   :alt: alternate text
-   :align: right
-
 
 <html>
  <body>
@@ -85,38 +53,6 @@ image:: "https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PN
  </body>
 </html>
 
-
-
- 
-<div class="flex_wrapper">
- <div class="flex">
-  <div class="item1">
-    <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" alt="">
-    <p>Описание этого блока, очевидно полезное но точно отображаюшее суть этого блока</p>
-  </div>
-
-  <div class="item2">
-    <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" alt="">
-    <p>Описание этого блока, очевидно полезное но точно отображаюшее суть этого блока</p>
-  </div>
- </div>
-   <p style="text-align: center;">Какойто текст</p>
-   
-</div>
-<style>
-  .item1{
-   float: right;
-   width: 30%;
-   } 
-   .item2{
-   float: left;
-   width: 30%;
-   } 
-   .flex{
-   display: flex
-   }
-   
-</style>
 
 ## Usage
 1. The model is located in `RNN_model_rus.py.`
