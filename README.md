@@ -57,11 +57,7 @@ Neural Network Architecture:
   <div class="close">X</div>
 </div>
 
-<figure class="sign">
-   <p><img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" width="150" height="212" alt="Скульптура"></p>
-   <figcaption>Деревянная скульптура</figcaption>
-  </figure>
-  <html>
+<html>
  <head>
   <meta charset="utf-8">
   <title>Фотографии</title>
@@ -69,8 +65,10 @@ Neural Network Architecture:
    <body>
       <p>
        <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" alt="Фотография 1" width="120" height="120">
+         <h3>Какое то название</h3>
        <span class="desc">neural network 2</span>
        <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" alt="Фотография 2" width="120" height="120">
+         <h3>Какое то название</h3>
        <span class="desc">neural network 2</span>
        <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" alt="Фотография 3" width="120" height="120">
        <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" alt="Фотография 4" width="120" height="120">
