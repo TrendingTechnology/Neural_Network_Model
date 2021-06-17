@@ -62,15 +62,6 @@ Neural Network Architecture:
  <head>
   <meta charset="utf-8">
   <title>Фотографии</title>
-  <style>
-   .thumb img  {
-    border: 2px solid #55c5e9; /* Рамка вокруг фотографии */
-    padding: 15px; /* Расстояние от картинки до рамки */
-    background: #666; /* Цвет фона */
-    margin-right: 10px; /* Отступ справа */
-    margin-bottom: 10px; /* Отступ снизу */
-   }
-  </style>
  </head>
  <body>
   <p class="thumb">
