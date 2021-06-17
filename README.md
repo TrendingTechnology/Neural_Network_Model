@@ -78,6 +78,24 @@ Neural Network Architecture:
    </body>
  </html>
  
+ 
+ <div class="flex">
+
+  <div class="item">
+    <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" alt="">
+    <h3>Какое то название</h3>
+    <p>Описание этого блока, очевидно полезное но точно отображаюшее суть этого блока</p>
+  </div>
+
+  <div class="item">
+    <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" alt="">
+    <h3>Какое то название</h3>
+    <p>Описание этого блока, очевидно полезное но точно отображаюшее суть этого блока</p>
+  </div>
+
+</div>
+
+
 ## Usage
 1. The model is located in `RNN_model_rus.py.`
 2. Run python `RNN_model_rus.py` to predict the topic of a scientific article, if you need to train the model, you need to call the function `show_model()`.
