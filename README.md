@@ -1,6 +1,6 @@
 ## Text Classification
 
-   The *purpose* of this repository is to create a neural network model of NLP with deep learning for binary classification of texts related to the Ministry of Emergency Situations.
+   p {text-indent: 20px;} The *purpose* of this repository is to create a neural network model of NLP with deep learning for binary classification of texts related to the Ministry of Emergency Situations.
 
 ---
 
