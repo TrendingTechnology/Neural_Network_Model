@@ -40,11 +40,9 @@ def model_lstm(self, show_structure: bool = False):
       model.summary()
   return model
 ```
-
+## Neural Network Architecture:
 <html>
-<head>
-<p>
-   Neural Network Architecture: <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" width="326" height="201" align="right"/> </p>
+<p><img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" width="258" height="159" align="right"/> </p>
    
    1. Embedding 
    
@@ -54,12 +52,11 @@ def model_lstm(self, show_structure: bool = False):
 
    4. Dense + Sigmoid
  
-</body>
-</html>
-
 
    The neural network was trained using the "*accuracy*" metric and the entropy function binary_cross. The accuracy of the model is 95%. In the future, it is planned to introduce other accuracy metrics (f1_score, f beta_score, etc.), as well as additional training of the neural network on additional topics. 
 
+ 
+ 
 <html>
  <body>
   <p class="thumb" align="center">
