@@ -24,8 +24,31 @@
 </p>
 
    A recurrent neural network with long-term short-term memory (LSTM) was used as a model. The purpose of the model was to recognize text related to the structure of the Ministry of Emergency Situations.
+   
+```
+def model_lstm(self, show_structure: bool = False):
 
+  """
 
+  A recurrent neural network of the Long short-term memory type, capable of learning long-term dependencies.
+  The Sequence to one recurrent neural network configuration was used. This configuration is applicable for
+  solving problems of text or video classification, when a sequence of words (or images) is fed to the input
+  of the network, and as an output we get a single probability vector for the classes.
+
+  """
+
+  model = Sequential()
+  model.add(Embedding(self.max_words, 12, input_length=self.max_len))
+  model.add(LSTM(6))
+  model.add(Dropout(0.6))
+  model.add(Dense(1, activation='sigmoid'))
+  model.compile(optimizer='adam',
+                loss='binary_crossentropy',
+                metrics=['accuracy'])
+  if show_structure:
+      model.summary()
+  return model
+```
 
 Neural Network Architecture:
 
@@ -47,28 +70,6 @@ Neural Network Architecture:
 <html>
  <body>
   <p class="thumb" align="center">
-   <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" alt="Фотография 1" width="120" height="120">
-   <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" alt="Фотография 2" width="120" height="120">
-  </p>
- </body>
-</html>
-
-<html>
- <head>
-  <meta charset="utf-8">
-  <title>Фотографии</title>
-  <style>
-   .thumb img  {
-    border: 2px solid #55c5e9; /* Рамка вокруг фотографии */
-    padding: 15px; /* Расстояние от картинки до рамки */
-    background: #666; /* Цвет фона */
-    margin-right: 10px; /* Отступ справа */
-    margin-bottom: 10px; /* Отступ снизу */
-   }
-  </style>
- </head>
- <body>
-  <p class="thumb">
    <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" alt="Фотография 1" width="120" height="120">
    <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" alt="Фотография 2" width="120" height="120">
   </p>
