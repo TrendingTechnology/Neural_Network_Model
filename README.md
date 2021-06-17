@@ -26,7 +26,6 @@
    A recurrent neural network with long-term short-term memory (LSTM) was used as a model. The purpose of the model was to recognize text related to the structure of the Ministry of Emergency Situations.
    
 ```python
-
 def model_lstm(self, show_structure: bool = False):
 
   model = Sequential()
@@ -40,22 +39,23 @@ def model_lstm(self, show_structure: bool = False):
   if show_structure:
       model.summary()
   return model
-  
 ```
 
-Neural Network Architecture:
-
-   1. Embedding
-
+<html>
+<head>
+<p>
+   Neural Network Architecture: <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" width="326" height="201" align="right"/> </p>
+   
+   1. Embedding 
+   
    2. LSTM
 
    3. Dropout
 
    4. Dense + Sigmoid
-
-<p align="center">
-  <img width="326" height="201" src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG">
-</p>
+ 
+</body>
+</html>
 
 
    The neural network was trained using the "*accuracy*" metric and the entropy function binary_cross. The accuracy of the model is 95%. In the future, it is planned to introduce other accuracy metrics (f1_score, f beta_score, etc.), as well as additional training of the neural network on additional topics. 
