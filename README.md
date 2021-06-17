@@ -3,13 +3,10 @@
 The *purpose* of this repository is to create a neural network model of NLP with deep learning for binary classification of texts related to the Ministry of Emergency Situations.
 
 ---
-A sample of 532 articles was used as input, where 266 scientific articles were manually marked by an expert and had a label of 1, and the remaining 266 articles were taken from an open source Habr.com and had a label of 0. The data was divided into 3 data sets: training, validation, test, and mixed. The purpose of the model was to recognize articles that relate to the topic "Disaster medicine in emergency situations". The model was evaluated using the "*accuracy* " metric, and the model's accuracy was 98%.
-
-As input data, a sample of 4,300 texts was used, of which 2,300 texts were parsed from news sites, about 550 scientific articles were marked by an expert manually (these articles are intended for further development of the model, in particular, classification of texts on 3 topics: Comprehensive topics, the topic "Ministry of Emergency Situations", the topic "Disaster Medicine in emergency situations", at the moment, a dataset on the topic "Disaster Medicine in Emergency Situations" is being formed and the comprehensive topic is being finalized) 2850 texts were labeled 1, and the remaining 1500 texts were parsed from a scientific journal on comprehensive topics. The data was divided into 3 data sets: training, validation, test, and mixed. The purpose of the model was to recognize the text related to the structure of the Ministry of Emergency Situations. The model was evaluated using the "*accuracy*" metric, and the model's accuracy was 96%.
 
 A sample of 4,300 texts was used as input, of which 2,850 texts were labeled 1:
 
-1) 2300 texts were obtained by parsing news sites, such as ();
+1) 2300 texts were obtained by parsing news sites, such as [rg.ru](https://rg.ru)"https://rg.ru", "https://iz.ru" etc.;
 2) 550 scientific articles were marked by an expert manually (scientific articles are intended for further development of the model, in particular, the classification of texts on 3 topics: Comprehensive topics, the topic of the Ministry of Emergency Situations, the topic "Disaster medicine in emergency situations", at the moment, a dataset is being formed on the topic "Disaster Medicine in Emergency situations" and a comprehensive topic is being finalized).
 
 The remaining 1,500 texts were obtained by parsing a scientific journal on comprehensive topics and were labeled 0.
