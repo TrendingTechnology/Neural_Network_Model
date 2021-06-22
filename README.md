@@ -70,7 +70,7 @@ def model_lstm(self, show_structure: bool = False):
 
 
 ## Usage
-1. The model is located in `RNN_model_rus.py.`
+1. The model is located in [`model.py.`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/model.py)
 2. Run python `RNN_model_rus.py` to predict the topic of a scientific article, if you need to train the model, you need to call the function `show_model()`.
 
 ## Components of the model
