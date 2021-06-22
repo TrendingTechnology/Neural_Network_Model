@@ -4,6 +4,27 @@
    
 ---
 
+## Components of the model
+
+The block contains a brief excerpt of the project files, a more detailed description is located inside each module.
+
+
+`RNN_model_rus.py` - The module is designed to predict the topic of a scientific article (whether it relates to the topic of "Disaster Medicine in emergency situations" or not).
+
+`Input_data.py` - The module is designed to prepare input data for a neural network.
+
+`Parser.py` - The module is designed for local parsing of html files of scientific articles from the data\2015 folder.
+
+`Reindex.py` - The module is designed to change the index of topics of scientific articles and group them.
+
+`Text_processing.py` - This is a code designed for processing text in Russian and English.
+
+`"weight. h5"` - Coefficients of the trained neural network.
+
+`"texts.json"` - Contains articles with Habr.com.
+
+`"2015.docx"` - Contains tags of scientific articles marked up by an expert.
+
 ## Data
 
    A sample of 4,300 texts was used as input, of which 2,800 texts were labeled 1:
@@ -73,26 +94,7 @@ def model_lstm(self, show_structure: bool = False):
 1. The model is located in [`model.py`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/model.py).
 2. Run the module [`model_predict.py`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/model_predict.py) to predict the topic of a scientific article, if you need to train the model, you need to run a module [`model_train.py`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/model_train.py).
 
-## Components of the model
 
-The block contains a brief excerpt of the project files, a more detailed description is located inside each module.
-
-
-`RNN_model_rus.py` - The module is designed to predict the topic of a scientific article (whether it relates to the topic of "Disaster Medicine in emergency situations" or not).
-
-`Input_data.py` - The module is designed to prepare input data for a neural network.
-
-`Parser.py` - The module is designed for local parsing of html files of scientific articles from the data\2015 folder.
-
-`Reindex.py` - The module is designed to change the index of topics of scientific articles and group them.
-
-`Text_processing.py` - This is a code designed for processing text in Russian and English.
-
-`"weight. h5"` - Coefficients of the trained neural network.
-
-`"texts.json"` - Contains articles with Habr.com.
-
-`"2015.docx"` - Contains tags of scientific articles marked up by an expert.
 ## Version
 
 Python 3.8
