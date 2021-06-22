@@ -49,7 +49,7 @@ def model_lstm(self, show_structure: bool = False):
 <html>
  <body>
   <p class="thumb" align="center">
-   <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" width="255" height="157" align="center"/>
+   <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" width="539" height="331" align="center"/>
   </p>
  </body>
 </html>
