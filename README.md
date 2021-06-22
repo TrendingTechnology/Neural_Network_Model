@@ -41,10 +41,19 @@ def model_lstm(self, show_structure: bool = False):
   return model
 ```
 ## Neural Network Architecture:
-<html>
-<p><img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" width="255" height="157" align="right"/> </p>
    
-   1. Embedding 
+   
+
+<p align="center">1. Embedding :arrow_right: 2.LSTM :arrow_right: 3. Dropout :arrow_right: 4. Dense + Sigmoid</p>
+
+<html>
+ <body>
+  <p class="thumb" align="center">
+   <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" width="255" height="157" align="center"/>
+  </p>
+ </body>
+</html>
+
    
    2. LSTM
 
