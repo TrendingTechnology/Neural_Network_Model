@@ -62,8 +62,8 @@ def model_lstm(self, show_structure: bool = False):
 <html>
  <body>
   <p class="thumb" align="center">
-   <img src="https://github.com/Non1ce/Image/blob/image/LSTM/img.PNG" alt="Фотография 1" width="635" height="483">
-   <img src="https://github.com/Non1ce/Image/blob/image/LSTM/result2.PNG" alt="Фотография 2" width="1081" height="310">
+   <img src="https://github.com/Non1ce/Image/blob/image/LSTM/img.PNG" alt="Фотография 1" width="486" height="369">
+   <img src="https://github.com/Non1ce/Image/blob/image/LSTM/result2.PNG" alt="Фотография 2" width="881" height="253">
   </p>
  </body>
 </html>
