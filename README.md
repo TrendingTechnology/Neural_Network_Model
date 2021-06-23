@@ -65,7 +65,7 @@ def model_lstm(self, show_structure: bool = False):
    
    
 
-<p align="center">1. Embedding :arrow_right: 2.LSTM :arrow_right: 3. Dropout :arrow_right: 4. Dense + Sigmoid</p>
+<p align="center">1. Embedding :arrow_right: 2. LSTM :arrow_right: 3. Dropout :arrow_right: 4. Dense + Sigmoid</p>
 
 <html>
  <body>
