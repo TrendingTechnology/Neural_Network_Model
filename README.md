@@ -41,7 +41,7 @@ The block contains a brief excerpt of the project files, a more detailed descrip
    To deal with these problems Long Short-Term Memory (LSTM) is a special type of RNN that preserves long term dependency in a more effective way compared to the basic RNNs. This is particularly useful to overcome vanishing gradient problem. Although LSTM has a chain-like structure similar to RNN, LSTM uses multiple gates to carefully regulate the amount of information that will be allowed into each node state. Figure shows the basic cell of a LSTM model.
    
 <p align="center">
-  <img width="407" height="298" src="https://github.com/Non1ce/Image/blob/image/LSTM/LSTM.png">
+  <img width="407" height="298" src="https://github.com/Non1ce/Image/blob/no_nice/LSTM/LSTM.png">
 </p>
 
    A recurrent neural network with long-term short-term memory (LSTM) was used as a model. The purpose of the model was to recognize text related to the structure of the Ministry of Emergency Situations.
@@ -70,7 +70,7 @@ def model_lstm(self, show_structure: bool = False):
 <html>
  <body>
   <p class="thumb" align="center">
-   <img src="https://github.com/Non1ce/Image/blob/image/LSTM/Model%20architecture.PNG" width="539" height="331" align="center"/>
+   <img src="https://github.com/Non1ce/Image/blob/no_nice/LSTM/Model%20architecture.PNG" width="539" height="331" align="center"/>
   </p>
  </body>
 </html>
@@ -83,8 +83,8 @@ def model_lstm(self, show_structure: bool = False):
 <html>
  <body>
   <p class="thumb" align="center">
-   <img src="https://github.com/Non1ce/Image/blob/image/LSTM/img.PNG" alt="Фотография 1" width="486" height="369">
-   <img src="https://github.com/Non1ce/Image/blob/image/LSTM/result2.PNG" alt="Фотография 2" width="881" height="253">
+   <img src="https://github.com/Non1ce/Image/blob/no_nice/LSTM/img.PNG" alt="Фотография 1" width="486" height="369">
+   <img src="https://github.com/Non1ce/Image/blob/no_nice/LSTM/Result.PNG" alt="Фотография 2" width="881" height="253">
   </p>
  </body>
 </html>
