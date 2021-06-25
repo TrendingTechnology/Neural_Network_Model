@@ -6,6 +6,9 @@
 
 ## Components of the model
 
+The block contains the structure of the project, as well as a brief excerpt of the files, a more detailed description is located inside each module.
+
+
 <html>
  <body>
   <p class="thumb" align="center">
@@ -13,8 +16,6 @@
   </p>
  </body>
 </html>
-
-The block contains the structure of the project, as well as a brief excerpt of the files, a more detailed description is located inside each module.
 
 [`model_predict.py`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/model_predict.py) -The module is designed to predict the topic of the text, whether the text belongs to the structure of the Ministry of Emergency Situations or not.
 
