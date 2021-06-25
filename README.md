@@ -19,19 +19,19 @@ The block contains the structure of the project, as well as a brief excerpt of t
 
 [`model_predict.py`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/model_predict.py) -The module is designed to predict the topic of the text, whether the text belongs to the structure of the Ministry of Emergency Situations or not.
 
-[`model_train.py`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/model_train.py) -The module is designed to connect all the modules of the package and start training the neural network. (Contains 5 functions that access certain modules). The output is the coefficients (weights) of the neural network.
+[`model_train.py`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/model_train.py) -The module is designed to connect all the modules of the package and start training the neural network. Contains 5 functions that access certain modules. The output is the coefficients (weights) of the neural network.
 
 [`model.py`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/model.py) -The module contains the architecture of the model and a function for its training.
 
-[`Data.py`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/Data.py) -The module is designed to prepare input data for a neural network (Split into training, test and validation dataset).
+[`Data.py`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/Data.py) -The module is designed to prepare input data for a neural network (split into training, test and validation dataset).
 
 [`Parser.py`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/Parser.py) -The module is designed for parsing html files of scientific articles from the data folder, as well as for parsing certain sites.
 
-[`Text_processing.py`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/Text_processing.py) - This is a module designed for processing text in Russian and English (Removing extra characters, reducing to lowercase, removing stopwords, removing punctuation, stemming).
+[`Text_processing.py`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/Text_processing.py) - This is a module designed for processing text in Russian and English (removing extra characters, reducing to lowercase, removing stopwords, removing punctuation, stemming).
 
 [`weights.h5`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/weights.h5) - Coefficients of the trained neural network.
 
-[`MCHS_2300.json`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/MCHS_2300.json) - Texts that relate to the structure of the Ministry of Emergency Situations (News about emergencies, terms of the Ministry of Emergency Situations).
+[`MCHS_2300.json`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/MCHS_2300.json) - Texts that relate to the structure of the Ministry of Emergency Situations (news about emergencies, terms of the Ministry of Emergency Situations).
 
 [`topic_full.json`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/topic_full.json) - Contains texts related to a comprehensive topic. The text data was obtained using parsing sites.
 
