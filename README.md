@@ -30,7 +30,7 @@ The block contains the structure of the project, as well as a brief excerpt of t
 
 `weights. h5` - Coefficients of the trained neural network.
 
-`MCHS_2300.json` - Texts that relate to the structure of the Ministry of Emergency Situations. (News about emergencies, terms of the Ministry of Emergency Situations).
+`MCHS_2300.json` - Texts that relate to the structure of the Ministry of Emergency Situations (News about emergencies, terms of the Ministry of Emergency Situations).
 
 `topic_full.json` - Contains texts related to a comprehensive topic. The text data was obtained using parsing sites.
 
