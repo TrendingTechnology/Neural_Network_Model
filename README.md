@@ -14,24 +14,25 @@
  </body>
 </html>
 
-The block contains a brief excerpt of the project files, a more detailed description is located inside each module.
+The block contains the structure of the project, as well as a brief excerpt of the files, a more detailed description is located inside each module.
 
+`model_predict.py` -The module is designed to predict the topic of the text, whether the text belongs to the structure of the Ministry of Emergency Situations or not.
 
-`RNN_model_rus.py` - The module is designed to predict the topic of a scientific article (whether it relates to the topic of "Disaster Medicine in emergency situations" or not).
+`model_train.py` -The module is designed to connect all the modules of the package and start training the neural network. (Contains 5 functions that access certain modules). The output is the coefficients (weights) of the neural network.
 
-`Input_data.py` - The module is designed to prepare input data for a neural network.
+`model.py` -The module contains the architecture of the model and a function for its training.
 
-`Parser.py` - The module is designed for local parsing of html files of scientific articles from the data\2015 folder.
+`Data.py` -The module is designed to prepare input data for a neural network (Split into training, test and validation dataset).
 
-`Reindex.py` - The module is designed to change the index of topics of scientific articles and group them.
+`Parser.py` -The module is designed for parsing html files of scientific articles from the data folder, as well as for parsing certain sites.
 
-`Text_processing.py` - This is a code designed for processing text in Russian and English.
+`Text_processing.py` - This is a module designed for processing text in Russian and English (Removing extra characters, reducing to lowercase, removing stopwords, removing punctuation, stemming).
 
-`"weight. h5"` - Coefficients of the trained neural network.
+`weights. h5` - Coefficients of the trained neural network.
 
-`"texts.json"` - Contains articles with Habr.com.
+`MCHS_2300.json` - Texts that relate to the structure of the Ministry of Emergency Situations. (News about emergencies, terms of the Ministry of Emergency Situations).
 
-`"2015.docx"` - Contains tags of scientific articles marked up by an expert.
+`topic_full.json` - Contains texts related to a comprehensive topic. The text data was obtained using parsing sites.
 
 ## Data
 
