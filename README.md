@@ -6,6 +6,14 @@
 
 ## Components of the model
 
+<html>
+ <body>
+  <p class="thumb" align="center">
+   <img src="https://github.com/Non1ce/Image/blob/no_nice/LSTM/Description.png" align="center"/>
+  </p>
+ </body>
+</html>
+
 The block contains a brief excerpt of the project files, a more detailed description is located inside each module.
 
 
