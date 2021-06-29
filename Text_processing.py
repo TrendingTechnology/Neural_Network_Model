@@ -26,6 +26,7 @@ class Processing:
     def text(base_path, text: list, del_stopwords: bool = True, language=None, add_rus_stopwords: bool = True):
 
         """
+
         Parameters
         ----------
 

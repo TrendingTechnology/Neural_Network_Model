@@ -28,7 +28,6 @@ def text_prediction(model, file_weight, tokenizer, max_len):
     test_sequences = tokenizers.texts_to_sequences([input_text])
     x = pad_sequences(test_sequences, maxlen=max_len)
     result = model.predict(x)
-    print(result)
 
     if result > 0.75:
         print('Neural Network class: Тематика МЧС')
