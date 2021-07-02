@@ -99,7 +99,7 @@ def tokenization(df):
 def train(show_model: bool = False):
 
     path = r'C:\PythonProjects\Jobs\LSTM_model'
-    save_file = 'weights_new'
+    save_file = 'weights'
 
     text_articles_mchs, articles, text = load_data(path)
     df = create_dataframe(text_articles_mchs, articles, text, path)
