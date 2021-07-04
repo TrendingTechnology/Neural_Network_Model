@@ -6,7 +6,7 @@
 
 ## Components of the model
 
-The block contains the structure of the project, as well as a brief excerpt of the files, a more detailed description is located inside each module.
+The block contains the structure of the project, as well as a brief excerpt from the files, a more detailed description is located inside each module. A better picture quality of the structure is found [`here`](https://github.com/Non1ce/Image/blob/no_nice/LSTM/Description.png).
 
 
 <html>
@@ -17,15 +17,19 @@ The block contains the structure of the project, as well as a brief excerpt of t
  </body>
 </html>
 
-[`model_predict.py`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/model_predict.py) -The module is designed to predict the topic of the text, whether the text belongs to the structure of the Ministry of Emergency Situations or not.
+[`model_predict.py`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/model_predict.py) - The module is designed to predict the topic of the text, whether the text belongs to the structure of the Ministry of Emergency Situations or not.
 
-[`model_train.py`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/model_train.py) -The module is designed to connect all the modules of the package and start training the neural network. Contains 5 functions that access certain modules. The output is the coefficients (weights) of the neural network.
+[`model_train.py`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/model_train.py) - The module is designed to connect all the modules of the package and start training the neural network. Contains 5 functions that access certain modules. The output is the coefficients (weights) of the neural network.
 
-[`model.py`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/model.py) -The module contains the architecture of the model and a function for its training.
+[`model_evaluation.py`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/model_evaluation.py) - The module is designed to evaluate a neural network model using various metrics.
 
-[`Data.py`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/Data.py) -The module is designed to prepare input data for a neural network (split into training, test and validation dataset).
+[`model.py`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/model.py) - The module contains the architecture of the model and a function for its training.
 
-[`Parser.py`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/Parser.py) -The module is designed for parsing html files of scientific articles from the data folder, as well as for parsing certain sites.
+[`metrics.py`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/metrics.py) - The module contains Metrics for evaluating the effectiveness of classification of neural network models.
+
+[`Data.py`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/Data.py) - The module is designed to prepare input data for a neural network (split into training, test and validation dataset).
+
+[`Parser.py`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/Parser.py) - The module is designed for parsing html files of scientific articles from the data folder, as well as for parsing certain sites.
 
 [`Text_processing.py`](https://github.com/Non1ce/Neural_Network_Model/blob/no_nice/Text_processing.py) - This is a module designed for processing text in Russian and English (removing extra characters, reducing to lowercase, removing stopwords, removing punctuation, stemming).
 
