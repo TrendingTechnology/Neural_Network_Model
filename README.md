@@ -85,6 +85,8 @@ def model_lstm(self, show_structure: bool = False):
  </body>
 </html>
 
+## Evaluation of the model:
+
 
    The neural network was trained using the "accuracy" metric and the binary_cross entropy function. The accuracy of the model is 98.7%. The model was evaluated using the AUC metric. The AUC-ROC was constructed for the threshold values of the binary classification from 0 to 1 with a step of 0.0002. According to the following formula, the optimal threshold value was selected:
    
@@ -92,15 +94,18 @@ def model_lstm(self, show_structure: bool = False):
 
 
 TPR = The number of true positives among all class labels that were defined as "positive".
+
+
 FPR = The number of truly negative labels among all the class labels that were defined as "negative".
 
 
 At each step, optimal was calculated and written to the dictionary, where the key was optimal, and the value was the threshold. Next, the smallest optimal was selected, which corresponded to the optimal threshold value.
 
+
 <html>
  <body>
   <p class="thumb" align="center">
-   <img src="https://github.com/Non1ce/Image/blob/no_nice/LSTM/image.PNG" alt="Фотография 1" width="486" height="369">
+   <img src="https://github.com/Non1ce/Image/blob/no_nice/LSTM/AUC-ROC.png" width="638" height="383">
   </p>
  </body>
 </html>
