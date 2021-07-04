@@ -86,15 +86,21 @@ def model_lstm(self, show_structure: bool = False):
 </html>
 
 
-   The neural network was trained using the "*accuracy*" metric and the entropy function binary_cross. The accuracy of the model is *96%*. In the future, it is planned to introduce other accuracy metrics (f1_score, f beta_score, etc.), as well as additional training of the neural network on additional topics. 
+   The neural network was trained using the "accuracy" metric and the binary_cross entropy function. The accuracy of the model is 98.7%. The model was evaluated using the AUC metric. The AUC-ROC was constructed for the threshold values of the binary classification from 0 to 1 with a step of 0.0002. According to the following formula, the optimal threshold value was selected:
+   
+   <p align="center"> optimal = |TPR - (1-FPR)|, optimal -> min </p>
 
- 
- 
+
+TPR = The number of true positives among all class labels that were defined as "positive".
+FPR = The number of truly negative labels among all the class labels that were defined as "negative".
+
+
+At each step, optimal was calculated and written to the dictionary, where the key was optimal, and the value was the threshold. Next, the smallest optimal was selected, which corresponded to the optimal threshold value.
+
 <html>
  <body>
   <p class="thumb" align="center">
-   <img src="https://github.com/Non1ce/Image/blob/no_nice/LSTM/img.PNG" alt="Фотография 1" width="486" height="369">
-   <img src="https://github.com/Non1ce/Image/blob/no_nice/LSTM/Result.PNG" alt="Фотография 2" width="881" height="253">
+   <img src="https://github.com/Non1ce/Image/blob/no_nice/LSTM/image.PNG" alt="Фотография 1" width="486" height="369">
   </p>
  </body>
 </html>
