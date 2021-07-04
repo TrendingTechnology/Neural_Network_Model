@@ -22,9 +22,11 @@ Created on 15.06.2021
 
 
 def load_data(path):
+
     text_articles_mchs = Parser.pars_local(path + r"\data")
     articles = pd.read_json(fr"{path}\MCHS_2300.json", orient='records')
     text = pd.read_json(fr"{path}\topic_full.json", orient='records')
+
     return text_articles_mchs, articles, text
 
 
@@ -64,6 +66,7 @@ def create_dataframe(text_articles_mchs, articles, text, path):
     text_text = text_processing(base_path=path, index=0, text_list=text.text)
 
     df = pd.concat([text_mchs, text_articles, text_text], axis=0, ignore_index=True)
+
     return df
 
 
@@ -89,7 +92,12 @@ def tokenization(df):
 
     """
 
-    data = InputData(text=df, columns_name_text='text', columns_name_labels='Index', max_words=10000, max_len=250)
+    data = InputData(text=df,
+                     columns_name_text='text',
+                     columns_name_labels='Index',
+                     max_words=10000,
+                     max_len=250)
+
     bag_of_words = data.tokenizer()
     x_train, y_train, x_test, y_test, x_val, y_val = data.data_separation(bag_of_words)
 
@@ -99,18 +107,25 @@ def tokenization(df):
 def train(show_model: bool = False):
 
     path = r'C:\PythonProjects\Jobs\LSTM_model'
-    save_file = 'weights'
+    save_file = 'weights_new'
 
     text_articles_mchs, articles, text = load_data(path)
     df = create_dataframe(text_articles_mchs, articles, text, path)
     x_train, y_train, x_test, y_test, x_val, y_val = tokenization(df)
 
-    model = train_models(x_train=x_train, y_train=y_train, x_test=x_test, y_test=y_test, max_words=10000, max_len=250)
-    model_lstm = model.model_lstm(show_structure=True)
-    train_model = model.model_lstm_train(model=model_lstm, epochs=6, batch_size=5,
-                                         save_file=save_file, show_model=show_model)
+    model = train_models(x_train=x_train,
+                         y_train=y_train,
+                         x_test=x_test,
+                         y_test=y_test,
+                         max_words=10000,
+                         max_len=250)
 
-    return model_lstm
+    model_lstm = model.model_lstm(show_structure=True)
+    train_model = model.model_lstm_train(model=model_lstm,
+                                         epochs=6,
+                                         batch_size=5,
+                                         save_file=save_file,
+                                         show_model=show_model)
 
 
 if __name__ == "__main__":

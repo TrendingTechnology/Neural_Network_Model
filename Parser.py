@@ -56,6 +56,7 @@ class Parser:
                 with open(fr"{file_location}\{year}\{article}", encoding="utf-8") as f:
 
                     try:
+
                         text_html = f.read()
                         text_html = Bs4(text_html, 'lxml')
                         text_tag = text_html.find_all('p', {'align': "justify"})
@@ -63,6 +64,7 @@ class Parser:
                         text = [text.text for text in text_tag
                                 if len(reg_rus.findall(text.text)) > 0]
                         text_articles.append(text[0])
+
                     except IndexError:
                         del article
 
@@ -99,16 +101,18 @@ class Parser:
 
                 links = soup.find_all('div', {'id': "stattext"})
                 out_links = [item.find('a').get('href') for item in links]
+
                 return out_links
 
             except requests.exceptions.ConnectionError:
-                time.sleep(40)
 
+                time.sleep(40)
                 responce = requests.get(url_news_link, headers=self.headers)
                 soup = Bs4(responce.text, 'lxml')
 
                 links = soup.find_all('div', {'id': "stattext"})
                 out_links = [item.find('a').get('href') for item in links]
+
                 return out_links
 
     def get_text(self, links: list, texts: list):

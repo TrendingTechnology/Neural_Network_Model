@@ -57,6 +57,7 @@ class train_models:
                       metrics=['accuracy'])
         if show_structure:
             model.summary()
+
         return model
 
     def model_lstm_train(self, model, epochs, batch_size, save_file, show_model: bool = True):
