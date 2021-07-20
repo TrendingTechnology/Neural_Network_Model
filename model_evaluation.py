@@ -36,7 +36,7 @@ def create_y_predict(model, x_val, main_path, weights_file, file_y_predict):
 
             x = np.expand_dims(x_val[k], axis=0)
             y_predict = model.predict(x)
-            document.write(str(float(y_predict))+',')
+            document.write(f'{float(y_predict)},')
 
         document.close()
 
