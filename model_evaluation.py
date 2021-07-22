@@ -34,8 +34,8 @@ def create_y_predict(model, x_val, main_path, weights_file, file_y_predict):
 
         for k in range(len(x_val)):
 
-            x = np.expand_dims(x_val[k], axis=0)
-            y_predict = model.predict(x)
+            x_val = np.expand_dims(x_val[k], axis=0)
+            y_predict = model.predict(x_val)
             document.write(f'{float(y_predict)},')
 
         document.close()
@@ -118,22 +118,15 @@ def evaluation():
 
     """
 
-    path = r'C:\PythonProjects\Jobs\LSTM_model'
-    weights_file = 'weights'
-    file_y_predict = 'y_predict'
-
-    threshold_tpr = 0.97
-    threshold_fpr = 0.1
-    step = 0.0002
-
     text_articles_mchs, articles, text = model_train.load_data(path)
+
     df = model_train.create_dataframe(text_articles_mchs, articles, text, path)
 
     data = InputData(text=df,
-                     columns_name_text='text',
-                     columns_name_labels='Index',
-                     max_words=10000,
-                     max_len=250)
+                     columns_name_text=columns_name_text,
+                     columns_name_labels=columns_name_labels,
+                     max_words=max_words,
+                     max_len=max_len)
 
     tokenizer = data.tokenizer()
 
@@ -143,8 +136,8 @@ def evaluation():
                          y_train=y_train,
                          x_test=x_test,
                          y_test=y_test,
-                         max_words=10000,
-                         max_len=250)
+                         max_words=max_words,
+                         max_len=max_len)
 
     model_lstm = model.model_lstm(show_structure=False)
 
@@ -161,4 +154,18 @@ def evaluation():
 
 
 if __name__ == "__main__":
+
+    path = r'C:\PythonProjects\Jobs\LSTM_model'
+    weights_file = 'weights'
+    file_y_predict = 'y_predict'
+
+    columns_name_text = 'text'
+    columns_name_labels = 'Index'
+
+    threshold_tpr = 0.97
+    threshold_fpr = 0.1
+    max_words = 10000
+    max_len = 250
+    step = 0.0002
+
     evaluation()

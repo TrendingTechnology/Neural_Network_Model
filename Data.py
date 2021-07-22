@@ -47,17 +47,17 @@ class InputData:
     def tokenizer(self):
 
         tokenizers = Tokenizer(num_words=self.max_words)
-        tokenizers.fit_on_texts(self.text[f'{self.columns_name_text}'])
+        tokenizers.fit_on_texts(self.text[self.columns_name_text])
 
         return tokenizers
 
     def data_separation(self, tokenizers):
 
-        sequences = tokenizers.texts_to_sequences(self.text[f'{self.columns_name_text}'])
+        sequences = tokenizers.texts_to_sequences(self.text[self.columns_name_text])
 
         # Input data.
         x = pad_sequences(sequences, maxlen=self.max_len)
-        y = self.text[f'{self.columns_name_labels}']
+        y = self.text[self.columns_name_labels]
 
         # Divide the data into training, validation, and test data sets.
         x_train, x_test, y_train, y_test = train_test_split(x,

@@ -93,10 +93,10 @@ def tokenization(df):
     """
 
     data = InputData(text=df,
-                     columns_name_text='text',
-                     columns_name_labels='Index',
-                     max_words=10000,
-                     max_len=250)
+                     columns_name_text=columns_name_text,
+                     columns_name_labels=columns_name_labels,
+                     max_words=max_words,
+                     max_len=max_len)
 
     bag_of_words = data.tokenizer()
     x_train, y_train, x_test, y_test, x_val, y_val = data.data_separation(bag_of_words)
@@ -106,9 +106,6 @@ def tokenization(df):
 
 def train(show_model: bool = False):
 
-    path = r'C:\PythonProjects\Jobs\LSTM_model'
-    save_file = 'weights_new'
-
     text_articles_mchs, articles, text = load_data(path)
     df = create_dataframe(text_articles_mchs, articles, text, path)
     x_train, y_train, x_test, y_test, x_val, y_val = tokenization(df)
@@ -117,16 +114,29 @@ def train(show_model: bool = False):
                          y_train=y_train,
                          x_test=x_test,
                          y_test=y_test,
-                         max_words=10000,
-                         max_len=250)
+                         max_words=max_words,
+                         max_len=max_len)
 
     model_lstm = model.model_lstm(show_structure=True)
+
     train_model = model.model_lstm_train(model=model_lstm,
-                                         epochs=6,
-                                         batch_size=5,
+                                         epochs=epochs,
+                                         batch_size=batch_size,
                                          save_file=save_file,
                                          show_model=show_model)
 
 
 if __name__ == "__main__":
+
+    path = r'C:\PythonProjects\Jobs\LSTM_model'
+    save_file = 'weights_new'
+
+    columns_name_text = 'text'
+    columns_name_labels = 'Index'
+
+    max_words = 10000
+    max_len = 250
+    epochs = 6
+    batch_size = 5
+
     train(show_model=True)
