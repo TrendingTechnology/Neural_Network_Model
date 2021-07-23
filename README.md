@@ -6,7 +6,7 @@
 
 ## Components of the model
 
-The block contains the structure of the project, as well as a brief excerpt from the files, a more detailed description is located inside each module. A better picture quality of the structure is found [`here`](https://github.com/Non1ce/Image/blob/no_nice/LSTM/Description.png).
+The block contains the structure of the project, as well as a brief excerpt from the files, a more detailed description is located inside each module.
 
 
 <html>
