@@ -41,7 +41,8 @@ def create_y_predict(model, x_val, main_path, weights_file, file_y_predict):
         document.close()
 
 
-def get_values(model, y_val, main_path, weights_file, file_y_predict, step, threshold_tpr, threshold_fpr):
+def get_values(model, y_val, main_path, weights_file,
+               file_y_predict, step, threshold_tpr, threshold_fpr):
 
     """
 
