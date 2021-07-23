@@ -13,8 +13,8 @@ Created on 03.06.2021
 
     This is code designed for processing rus and eng text. The code has two methods, the first is a static method and is 
     used to add additional Russian stopwords to the stopwords bag. The second method processes the text, removes 
-    stopwords, punctuation in sentences, and reduces all words to lowercase and to a single (initial) form. 
-    This module outputs the result in the form of word sequences.
+    stopwords, punctuation in sentences, and reduces all words to lowercase and to a single (initial) form. This module 
+    outputs the result in the form of word sequences.
 
 """
 
@@ -23,16 +23,17 @@ class Processing:
 
     # Preprocessing text
     @staticmethod
-    def text(base_path, text: list, del_stopwords: bool = True, language=None, add_rus_stopwords: bool = True):
+    def get_text(text: list, base_path: str, del_stopwords: bool = True,
+                 language=None, add_rus_stopwords: bool = True):
 
         """
 
         Parameters
         ----------
 
-        base_path : Location of the file with additional stopwords.
-
         text : Dataframe containing text.
+
+        base_path : Location of the file with additional stopwords.
 
         del_stopwords : Function for deleting stop words. This feature is enabled by default. If you don't need to
                         delete stop words, specify del_stopwords = False in the function parameters.
@@ -47,7 +48,11 @@ class Processing:
 
         # Converts text to a sequence of words (or tokens).
         for line in text:
-            tokens = text_to_word_sequence(line, filters='!"#$%&amp;()*+,-./:;&lt;=>?@[\\]^_`{|}~\t\n\ufeff', split=' ')
+
+            tokens = text_to_word_sequence(line,
+                                           filters='!"#$%&amp;()*+,-./:;&lt;=>?@[\\]^_`{|}~\t\n\ufeff',
+                                           split=' ')
+
             token_sequence.append(tokens)
 
         if language == 'russian':
@@ -60,9 +65,8 @@ class Processing:
                     russian_stopwords = stopwords.words('russian')
 
                     if add_rus_stopwords:
-                        with open(base_path + r'\Stopwords.txt', encoding='utf-8') as f:
-                            stop_words = f.read()
-                            stop_words = stop_words.split(" ")
+                        with open(fr'{base_path}\Stopwords.txt', encoding='utf-8') as f:
+                            stop_words = f.read().split(" ")
                             for word in stop_words:
                                 russian_stopwords.append(word)
 

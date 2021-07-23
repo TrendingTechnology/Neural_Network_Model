@@ -20,7 +20,7 @@ Created on 09.06.2021
 
 class Parser:
 
-    def __init__(self, main_url, headers: dict):
+    def __init__(self, main_url: str, headers: dict):
         self.main_url = main_url
         self.headers = headers
 
@@ -36,7 +36,7 @@ class Parser:
     """
 
     @staticmethod
-    def pars_local(file_location):
+    def pars_local(file_location: str):
 
         """
 
@@ -133,7 +133,7 @@ class Parser:
 
             try:
 
-                url = self.main_url[:23] + link
+                url = fr"{self.main_url[:23]}{link}"
                 responce = requests.get(url, headers=self.headers)
                 soup = Bs4(responce.text, 'lxml')
 

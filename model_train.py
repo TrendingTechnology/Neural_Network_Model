@@ -13,17 +13,15 @@ Created on 15.06.2021
 @author: Nikita
 
     The module is designed for training a neural network. The neural network was trained using the accuracy metric 
-    and the entropy function binary_cross. The accuracy of the model is 0.95. In the future, it is planned to introduce 
-    other accuracy metrics (f1_score, f beta_score, etc.), as well as additional training of the neural network on 
-    additional topics. To train a neural network, it is enough to run the module as the main program. To display neural 
-    network error graphs, you need "show_model" = True.
+    and the entropy function binary_cross. The accuracy of the model is 0.96. To train a neural network, it is enough 
+    to run the module as the main program. To display neural network error graphs, you need "show_model" = True.
 
 """
 
 
 def load_data(path):
 
-    text_articles_mchs = Parser.pars_local(path + r"\data")
+    text_articles_mchs = Parser.pars_local(fr"{path}\data")
     articles = pd.read_json(fr"{path}\MCHS_2300.json", orient='records')
     text = pd.read_json(fr"{path}\topic_full.json", orient='records')
 
@@ -32,7 +30,10 @@ def load_data(path):
 
 def text_processing(base_path: str, index: int, text_list: list, language='russian'):
 
-    texts = [' '.join(item) for item in Processing.text(base_path, text_list, language=language)]
+    texts = [' '.join(item) for item in Processing.get_text(text=text_list,
+                                                            base_path=base_path,
+                                                            language=language)]
+
     df_text = pd.DataFrame(texts, columns=['text'])
     df_text['Index'] = index
 
@@ -61,9 +62,17 @@ def create_dataframe(text_articles_mchs, articles, text, path):
 
     """
 
-    text_mchs = text_processing(base_path=path, index=1, text_list=text_articles_mchs)
-    text_articles = text_processing(base_path=path, index=1, text_list=articles.text)
-    text_text = text_processing(base_path=path, index=0, text_list=text.text)
+    text_mchs = text_processing(base_path=path,
+                                index=1,
+                                text_list=text_articles_mchs)
+
+    text_articles = text_processing(base_path=path,
+                                    index=1,
+                                    text_list=articles.text)
+
+    text_text = text_processing(base_path=path,
+                                index=0,
+                                text_list=text.text)
 
     df = pd.concat([text_mchs, text_articles, text_text], axis=0, ignore_index=True)
 

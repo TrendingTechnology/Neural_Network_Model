@@ -32,10 +32,10 @@ def create_y_predict(model, x_val, main_path, weights_file, file_y_predict):
 
     with open(fr'{main_path}\{file_y_predict}.txt', 'w') as document:
 
-        for k in range(len(x_val)):
+        for i, text in enumerate(x_val):
 
-            x_val = np.expand_dims(x_val[k], axis=0)
-            y_predict = model.predict(x_val)
+            text = np.expand_dims(text, axis=0)
+            y_predict = model.predict(text)
             document.write(f'{float(y_predict)},')
 
         document.close()
