@@ -28,10 +28,10 @@ def load_data(path):
     return text_articles_mchs, articles, text
 
 
-def text_processing(base_path: str, index: int, text_list: list, language='russian'):
+def text_processing(path: str, index: int, text_list: list, language='russian'):
 
     texts = [' '.join(item) for item in Processing.get_text(text=text_list,
-                                                            base_path=base_path,
+                                                            base_path=path,
                                                             language=language)]
 
     df_text = pd.DataFrame(texts, columns=['text'])
@@ -44,14 +44,14 @@ def create_dataframe(text_articles_mchs, articles, text, path):
 
     """
 
-    The module is designed to create a single dataframe. The modules are loaded with 3 datasets, two of which relate
-    to the structure of the Ministry of Emergency Situations and the third dataset is made up of comprehensive topics.
-    The dataset data is passed to the "text_processing" for text processing and assignment "index".
+    The function is designed to create a single data frame. The function loads 3 data sets, two of which relate to the
+    structure of the Ministry of Emergency Situations and the third data set consists of complex topics. The data of the
+    dataset is passed to " text_processing "for processing the text and assigning an"index".
 
     Parameters text_processing
     ----------
 
-    base_path : Location of the module package.
+    path : Location of the module package.
 
     index : This is the class that the text belongs to.
 
@@ -62,15 +62,15 @@ def create_dataframe(text_articles_mchs, articles, text, path):
 
     """
 
-    text_mchs = text_processing(base_path=path,
+    text_mchs = text_processing(path=path,
                                 index=1,
                                 text_list=text_articles_mchs)
 
-    text_articles = text_processing(base_path=path,
+    text_articles = text_processing(path=path,
                                     index=1,
                                     text_list=articles.text)
 
-    text_text = text_processing(base_path=path,
+    text_text = text_processing(path=path,
                                 index=0,
                                 text_list=text.text)
 
@@ -83,7 +83,7 @@ def tokenization(df):
 
     """
 
-    The module is designed to form a bag of tokenizer words, as well as to divide the dataset
+    The function is designed to form a bag of tokenizer words, as well as to divide the dataset
     into a training, test, and validation sample.
 
     Parameters InputData
@@ -108,6 +108,7 @@ def tokenization(df):
                      max_len=max_len)
 
     bag_of_words = data.tokenizer()
+
     x_train, y_train, x_test, y_test, x_val, y_val = data.data_separation(bag_of_words)
 
     return x_train, y_train, x_test, y_test, x_val, y_val
@@ -115,24 +116,32 @@ def tokenization(df):
 
 def train(show_model: bool = False):
 
+    """
+
+    The function is designed for the sequential application of several functions.
+
+    """
+
     text_articles_mchs, articles, text = load_data(path)
+
     df = create_dataframe(text_articles_mchs, articles, text, path)
+
     x_train, y_train, x_test, y_test, x_val, y_val = tokenization(df)
 
-    model = train_models(x_train=x_train,
-                         y_train=y_train,
-                         x_test=x_test,
-                         y_test=y_test,
-                         max_words=max_words,
-                         max_len=max_len)
+    model_instance = train_models(x_train=x_train,
+                                  y_train=y_train,
+                                  x_test=x_test,
+                                  y_test=y_test,
+                                  max_words=max_words,
+                                  max_len=max_len)
 
-    model_lstm = model.model_lstm(show_structure=True)
+    model_lstm = model_instance.model_lstm(show_structure=True)
 
-    train_model = model.model_lstm_train(model=model_lstm,
-                                         epochs=epochs,
-                                         batch_size=batch_size,
-                                         save_file=save_file,
-                                         show_model=show_model)
+    train_model = model_instance.model_lstm_train(model=model_lstm,
+                                                  epochs=epochs,
+                                                  batch_size=batch_size,
+                                                  save_file=save_file,
+                                                  show_model=show_model)
 
 
 if __name__ == "__main__":

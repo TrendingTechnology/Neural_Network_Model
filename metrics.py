@@ -177,6 +177,7 @@ class Metrics:
         """
 
         The function is intended for calculating the following values:
+
             tp : true positives;
             fp : false positives;
             fn : false negatives;

@@ -40,9 +40,9 @@ class Parser:
 
         """
 
-        The module is designed for local parsing of html files of scientific articles on the topic of disaster medicine
-        of any year using regular expressions. For each article, the code reads the annotation and writes it to the list
-        The result is an array of abstracts of scientific articles in Russian.
+        The function is designed for local parsing of html files of scientific articles on the topic of disaster
+        medicine of any year using regular expressions. For each article, the code reads the annotation and writes it
+        to the list. The result is an array of abstracts of scientific articles in Russian.
 
         """
 
