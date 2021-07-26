@@ -12,7 +12,7 @@ The block contains the structure of the project, as well as a brief excerpt from
 <html>
  <body>
   <p class="thumb" align="center">
-   <img src="https://github.com/Non1ce/Image/blob/no_nice/LSTM/Description.png" align="center"/>
+   <img src="https://github.com/Non1ce/Image/blob/no_nice/LSTM/LSTM.svg" align="center"/>
   </p>
  </body>
 </html>
