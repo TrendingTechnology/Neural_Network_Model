@@ -110,7 +110,7 @@ def show_auc_roc(tpr, fpr, roc_auc, threshold):
     plt.show()
 
 
-def evaluation():
+def evaluation(get_file_y_predict: bool = False):
 
     """
 
@@ -142,6 +142,14 @@ def evaluation():
 
     model_lstm = model.model_lstm(show_structure=False)
 
+    if get_file_y_predict:
+
+        create_y_predict(model=model_lstm,
+                         x_val=x_val,
+                         main_path=path,
+                         weights_file=weights_file,
+                         file_y_predict=file_y_predict)
+
     tpr, fpr, roc_auc, threshold = get_values(model=model_lstm,
                                               y_val=y_val,
                                               main_path=path,
@@ -169,4 +177,4 @@ if __name__ == "__main__":
     max_len = 250
     step = 0.0002
 
-    evaluation()
+    evaluation(get_file_y_predict=False)
