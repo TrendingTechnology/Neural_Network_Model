@@ -109,7 +109,7 @@ At each step, optimal was calculated and written to the dictionary, where the ke
 <html>
  <body>
   <p class="thumb" align="center">
-   <img src="https://github.com/Non1ce/Image/blob/no_nice/LSTM/AUC-ROC.png" width="638" height="383">
+   <img src="https://github.com/Non1ce/Image/blob/no_nice/LSTM/AUC-ROC-LSTM.png" width="638" height="383">
   </p>
  </body>
 </html>
